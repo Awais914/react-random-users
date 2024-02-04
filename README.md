@@ -2,12 +2,21 @@
 
 The app using https://randomuser.me API to fetch random users and displaying details.
 
+## Technology
+
+- 🟦 [TypeScript](https://www.typescriptlang.org/)
+- ⚛️ [React](https://reactjs.org/)
+- ↔ [Axios](https://github.com/axios/axios)
+
 ## Project Setup
 
 Clone the Repo and execute the following commands on terminal:
-
-### `npm install`
-### `npm start`
+```bash
+git clone https://github.com/Awais914/react-random-users.git
+cd react-random-users
+npm install
+npm start
+```
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
