@@ -33,7 +33,7 @@ const UsersListing: React.FC<UsersListingProps> = (props) => {
 	useEffect(() => {
 		setLoading(true);
 		getRandomUsers({ page: props.page || 1 }).then(res => {
-			setUsers(res.results);
+			setUsers(res);
 			setLoading(false);
 		}).catch(err => {
 			console.error(err);
@@ -43,7 +43,7 @@ const UsersListing: React.FC<UsersListingProps> = (props) => {
 	const fetchData = async () => {
 		getRandomUsers({ page: page + 1 }).then(res => {
 			setPage(page + 1);
-			setUsers(users.concat(res.results));
+			setUsers(users.concat(res));
 			setLoading(false);
 		}).catch(err => {
 			console.error(err);
